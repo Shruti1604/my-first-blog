@@ -1,17 +1,12 @@
 <html>
     <head>
-        <title>BLOG-HUB</title>
+        <title>Blog Hub</title>
     </head>
     <body>
         <div>
-            <h1><a href="/">BLOG_HUB</a></h1>
+            <h1><a href="/">Blog Hub</a></h1>
         </div>
-        {% for post in posts %}
-      <div>
-          <p>published: {{ post.published_date }}</p>
-          <h2><a href="">{{ post.title }}</a></h2>
-          <p>{{ post.text|linebreaksbr }}</p>
-      </div>
-  {% endfor %}
+
+        {{ posts }}
     </body>
 </html>
